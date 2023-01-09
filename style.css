@@ -1,0 +1,17 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #0f0f0f, #292525);
+  font-family: "Courier New", monospace;
+  font-weight: 300;
+}
+.clock {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  width: 280px;
+  height: 100px;
+}
