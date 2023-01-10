@@ -5,7 +5,7 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom right, #0f0f0f, #292525);
-  font-family: "Courier New", monospace;
+  font-family: monospace, monospace;
   font-weight: 300;
 }
 .clock {
@@ -14,4 +14,27 @@ body {
   flex-flow: column wrap;
   width: 280px;
   height: 100px;
+}
+.block {
+  height: 20%;
+  width: calc(100% / 12);
+  flex-direction: row;
+  color: lighten(#333, 8%);
+}
+.block:nth-child(15n + 15) {
+  margin-right: 10px;
+}
+.divider {
+  position: absolute;
+  width: 2px;
+  background-color: whitesmoke;
+  height: 15%;
+  top: 44%;
+  left: calc(50% + 28px);
+}
+.active {
+  color: white;
+}
+.active-orange {
+  color: rgb(100, 51, 63);
 }
