@@ -1,18 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming);
-@font-face {
-  font-family: "Retro Gaming";
-  src: url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot");
-  src: url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.svg#Retro Gaming")
-      format("svg");
-}
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 body {
   width: 100vw;
   height: 100vh;
@@ -89,7 +75,7 @@ body {
   height: 30px;
   position: absolute;
   justify-content: space-around;
-  font-family: Retro Gaming !important;
+  font-family: "Press Start 2P", cursive !important;
 }
 .btn-clock {
   margin: 5px;
@@ -126,12 +112,12 @@ body {
   margin-left: 2rem;
   display: flex;
   flex-direction: row;
-  width: 20%;
+  width: 25%;
   height: 80px;
   position: absolute;
   justify-content: space-around;
   align-items: center;
-  font-family: Retro Gaming !important;
+  font-family: "Press Start 2P", cursive !important;
 }
 .btn-start {
   margin: 5px;
@@ -179,7 +165,7 @@ body {
 .break-sign {
   display: flex;
   position: absolute;
-  font-family: Retro Gaming !important;
+  font-family: "Press Start 2P", cursive !important;
   justify-content: center;
   z-index: 2;
   margin-top: 2.5rem;
