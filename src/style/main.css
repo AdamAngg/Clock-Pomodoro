@@ -1,0 +1,204 @@
+@import url(//db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming);
+@font-face {
+  font-family: "Retro Gaming";
+  src: url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot");
+  src: url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.svg#Retro Gaming")
+      format("svg");
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #0f0f0f, #292525);
+  font-family: monospace, monospace;
+  font-weight: 300;
+}
+.clock {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  width: 280px;
+  height: 100px;
+  z-index: 1;
+}
+.pomodo {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  width: 280px;
+  height: 100px;
+}
+.block {
+  height: 20%;
+  position: relative;
+  width: calc(100% / 12);
+
+  color: lighten(rgb(61, 61, 61), 8%);
+  transform: font-size;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index: 2;
+}
+.block:nth-child(15n + 15) {
+  margin-right: 10px;
+}
+.block:hover {
+  font-size: large;
+}
+.block:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+.divider {
+  position: absolute;
+  width: 2px;
+  background-color: whitesmoke;
+  height: 40%;
+  top: 30%;
+  left: 54%;
+  justify-self: center;
+}
+.active {
+  color: white;
+}
+.active-orange {
+  color: rgb(100, 51, 63);
+}
+.btn-container {
+  margin-bottom: 10rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: 30px;
+  position: absolute;
+  justify-content: space-around;
+  font-family: Retro Gaming !important;
+}
+.btn-clock {
+  margin: 5px;
+  height: auto;
+  color: darkgrey;
+  cursor: pointer;
+  transition: font-size;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.btn-clock:hover {
+  font-size: large;
+}
+.btn-pomodo:hover {
+  font-size: large;
+}
+.btn-pomodo {
+  margin: 5px;
+  height: auto;
+  color: darkgrey;
+  cursor: pointer;
+  transition: font-size;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.btn-active {
+  border-bottom: 1px solid;
+  border-color: rgb(100, 51, 63);
+}
+.btn-start-container {
+  margin-top: 10rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  height: 80px;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Retro Gaming !important;
+}
+.btn-start {
+  margin: 5px;
+  width: auto;
+  color: darkgrey;
+  transition: font-size;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: opacity 2s;
+  opacity: 0;
+}
+.btn-restart {
+  margin: 5px;
+  width: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: darkgrey;
+  transition: font-size;
+  transition: opacity 2s;
+  opacity: 0;
+}
+.btn-stop {
+  margin: 5px;
+  width: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: darkgrey;
+  transition: font-size;
+  transition: opacity 2s;
+  opacity: 0;
+}
+.btn-stop:hover {
+  font-size: large;
+}
+.btn-start:hover {
+  font-size: large;
+}
+.btn-restart:hover {
+  font-size: large;
+}
+
+.break-sign {
+  display: flex;
+  position: absolute;
+  font-family: Retro Gaming !important;
+  justify-content: center;
+  z-index: 2;
+  margin-top: 2.5rem;
+  width: 150%;
+  left: -17%;
+  color: rgb(124, 148, 85);
+  transition: opacity 2s;
+  opacity: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.cursor-none {
+  pointer-events: none;
+}
+.fold {
+  transition: left, top 4s, 4s;
+}
+.rotate {
+  transition: transform 2s;
+  transform: rotateX(360deg);
+}
