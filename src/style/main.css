@@ -169,8 +169,8 @@ body {
   justify-content: center;
   z-index: 2;
   margin-top: 2.5rem;
-  width: 150%;
-  left: -17%;
+  width: 35rem;
+  left: -45%;
   color: rgb(124, 148, 85);
   transition: opacity 2s;
   opacity: 0;
