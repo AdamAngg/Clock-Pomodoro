@@ -5,4 +5,5 @@ This app will help you learn better.
 ## Used Stuff
 - JS
 - CSS
+- [Prettier](https://github.com/prettier/prettier)
 ##### [LIVE](https://adamangg.github.io/Clock-Pomodoro/)
