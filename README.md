@@ -1,7 +1,7 @@
 
 <h1 align="center" id="title">🕧 PomodoroClock 🕧</h1>
 
-<p>Clock made with pomodoro technique </p>
+<p>Clock made with pomodoro technique with some sound and visual enhancments </p>
 
 <h2>🕧DEMO</h2> 
 
